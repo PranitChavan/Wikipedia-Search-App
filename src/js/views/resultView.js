@@ -9,6 +9,7 @@ class DisplayResults {
   _pagination = document.querySelector('.pagination');
   _resultsCount = document.querySelector('.count__text');
   _logo = document.querySelector('.header__img');
+  _micBtn = document.querySelector('.input__mic');
 
   //passing this when form is submited or search btn is clicked
   _handleRequest(handler) {
@@ -31,6 +32,12 @@ class DisplayResults {
     this._searchBtn.addEventListener('click', (e) => {
       e.preventDefault();
       this._handleRequest(handler);
+    });
+  }
+
+  addHandlerMic(handler) {
+    this._micBtn.addEventListener('click', () => {
+      handler();
     });
   }
 

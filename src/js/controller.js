@@ -41,11 +41,17 @@ const controlPagination = function (page) {
   DisplayResults._render(pagination(page), state.results.length);
 };
 
+const controlMic = function () {
+  alert('Soon');
+};
+
 function init() {
   // ControlResults is called when user submits the form
   DisplayResults._handleSubmit(controlResults);
   // When user clicks on pagination buttons
   PaginationFunc.handlerPag(controlPagination);
+  // When clicked on mic btn
+  DisplayResults.addHandlerMic(controlMic);
 }
 
 init();
