@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container {
+  max-width: 50rem;
+  margin: 2rem auto;
+}
+
+.pagination {
+  &__list {
+    display: flex;
+    flex-direction: row;
+  }
+}

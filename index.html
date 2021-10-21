@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wikipedia Search</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./src/img/favicon.png" type="image/gif" />
+    <link rel="stylesheet" href="/src/sass/main.scss" />
+    <script defer src="/src/js/controller.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img
+          src="./src/img/logo.png"
+          alt="Wikipedia Logo"
+          class="header__img"
+        />
+      </div>
+
+      <div class="header__toggle">
+        <i class="fas fa-toggle-on fa-3x toggle"></i>
+      </div>
+    </header>
+
+    <main class="container">
+      <form action="" class="input">
+        <input type="search" class="input__text" />
+        <i class="fas fa-microphone input__mic"></i>
+        <i class="fas fa-search input__icon" aria-hidden="true"></i>
+      </form>
+
+      <div class="count">
+        <h2 class="count__text"></h2>
+      </div>
+
+      <div class="results">
+        <ul class="results__list"></ul>
+      </div>
+
+      <div class="pagination">
+        <ul class="pagination__list"></ul>
+      </div>
+    </main>
+  </body>
+</html>
